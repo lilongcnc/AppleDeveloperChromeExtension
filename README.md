@@ -1,6 +1,7 @@
 
-> [中文文档](https://github.com/lilongcnc/AppleDeveloperChromeExtension/README-zh.md) | 
+> [中文文档](https://github.com/lilongcnc/AppleDeveloperChromeExtension/blob/main/README_CN.md) | 
 > [Introduction](https://developer.apple.com/account/resources/profiles/list)
+
 
 ### environment
 
