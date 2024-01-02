@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "AppleDeveloperExtension",
+    "description": "Apple developer",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://developer.apple.com/account/resources/*"
+            ],
+            "css": [
+                "contentCss/content-script.css"
+            ],
+            "js": [
+                "jquery/jquery-1.8.3.js",
+                "content-script.js",
+                "js-utils.js",
+                "project-constants.js",
+                "content-script-profile.js",
+                "content-script-common.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "clipboardWrite",
+        "tabs",
+        "webRequest",
+        "webNavigation"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+
+}
